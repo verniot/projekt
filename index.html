@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Types</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            color: whitesmoke;
+            background: #1f1f29;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .banner{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        input{
+            display: none;
+        }
+        label{
+            display: none;
+        }
+        label img{
+            width: 27px;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+            padding: 0.5em 1em;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        a:hover{
+            background: #114d91;
+        }
+        nav{
+            background-color: #18181e;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        nav ul{
+            position: relative;
+            list-style: none;
+        }
+        nav ul>li{
+            display: inline-block;
+        }
+        nav h1{
+            padding-left: 10px;
+            padding-right: 10px;
+            margin: 0;
+        }
+        main{
+            margin: 0 auto;
+            padding: 1em;
+            max-width: 65%;
+        }
+        h2{
+            padding-top: 1em;
+        }
+        p{
+            color: lightslategray;
+        }
+        .ai-img{
+            width: 90%;
+            max-width: 800px;
+            display: block;
+            margin: 2em auto;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px lightslategray;
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+        .ai-img:hover{
+            transform: scale(1.3);
+            box-shadow: 0 8px 24px lightslategray;
+        }
+        footer{
+            background: #18181e;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+        .ref{
+            font-size: smaller;
+            padding: 0;
+        }
+        @media (max-width: 800px) {
+            nav{
+                position: relative;
+                flex-direction: column;
+                text-align: center;
+                padding: 5px;
+            }
+            main{
+                max-width: 95%;
+            }
+            h2{
+                font-size: medium;
+            }
+            .ai-img:hover{
+                transform: scale(1.1);
+            }
+            label{
+                display: block;
+                position: absolute;
+                left: calc(100% - 30px);
+            }
+            nav ul{
+                display: none;
+                padding: 0;
+                margin: 0;
+            }
+            nav ul>li{
+                width: 100%;
+                padding: 10px;
+                border-bottom: 1px  solid   lightslategray;
+            }
+            nav ul>li:hover{
+                background-color: #114d91;
+            }
+            input:checked~ul{
+                display: block;
+                width: 100%;
+                padding: 0px;
+            }
+            ol{
+                list-style: none;
+                padding: 0;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="Slike/DataCenter_Banner.jpg" alt="" class="banner_slika">
+        <img src="" alt="">
+    </div>
+    <nav>
+        <input type="checkbox" name="" id="checkbox">
+        <div id="Naslov">
+                <h1>Vrste AI</h1>
+        </div>
+        <ul>
+            <li><a href="#sposobnosti">Sposobnosti</a></li>
+            <li><a href="#funkcionalnosti">Funkcionalnosti</a></li>
+            <li><a href="#primjene">Primjene</a></li>
+        </ul>
+        <label for="checkbox"><img src="Slike/hamburger.png" alt=""></label>
+    </nav>
+    <main>
+        <div id="vrh">
+
+            <p>
+                Većina AI aplikacija današnjice zasniva se tradicionalnim modelima mašinskog učenja te se oslanja na algoritme učenja razvijenih od strane podatkovnih znanstvenika.
+                Pojednostavljeno, potrebna je ljudska intervencija za procesuiranje novih informacija te obavljanje zadaća koje nisu u predviđenim okvirima.
+            <br>
+                Znatniji napredak umjetne inteligencije događa se 2012. godine nakon razvoja Umjetne Neuralne Mreže (Artificial Neural Network) koja omogućava potpomognuto učenje (Reinforcement Learning) te simulira način kako ljudski mozak procesuira informacije.
+            </p>
+            <p>
+                Modeli Dubinskog Učenja (Deep Learning Models) daju umjetnoj inteligenciji sposobnost učenja/izvođenja novih zadaća i donošenje odluka bez ljudske intervencije. Daju mogućnost napredne automatizacije, prediktivnog održavanja, generiranje sadržaja te mnoge druge.
+            <br>
+                Zbog brzog razvoja na polju umjetne inteligencija i konstantnih inovacija, kolektivno razumijevanje njezinog realnog i teoretskog aspekta je u stanju stalne promjene ali se ugrubo mogu podijeliti u dvije skupine. Prema sposobnostima i prema funkcionalnostima.
+            </p>
+        </div>
+        <div id="sposobnosti">
+            <h2>AI Podjela Prema Sposobnostima</h2>
+            <ol>
+                <li>Artificial Narrow AI (Usko Specijalizirana)
+                    <p>
+                        Poznat kao i Slab AI te je i jedini oblik umjetne inteligencije koji danas postoji. Usko je specijaliziran (Treniran) za obavljanje samo jedne vrste zadaće. Često je puno brži i kompetentniji u obavljanju te zadaće nego sam čovjek. Npr. kao ChatGPT.
+                    </p>
+                </li>
+                <li>General AI (Artificial General Intelligence) (AGI)
+                    <p>
+                        Naziva se i jak (Strong) AI te postoji samo u teoriji. Koristi prijašnje iskustvo da obavlja nove zadaće za koje nije treniran (programiran) bez ljudske intervencije. Na intelektualnoj razini mogao bi učiti i djelovati kao čovjek.
+                    </p>
+                </li>
+                <li>Super AI
+                    <p>
+                        Umjetna Super Inteligencija postoji samo u teoriji. Sposobnosti Super AI-a bi daleko premašile one ljudske te bi bio apsolutno superioran u svakom pogledu (čak i emocionalno). 
+                    </p>
+                </li>
+            </ol>
+            <img src="Slike/Maia_100_AI_Segment.jpg" alt="" class="ai-img">
+        </div>
+        <div id="funkcionalnosti">
+            <h2>AI Podjela Prema Funkcionalnosti</h2>
+            <ol>
+                <li>Reaktivni (Machine) AI
+                    <p>
+                        Sustavi umjetne inteligencije bez memorije i dizajnirani za specifičnu namjenu. Djeluju samo s trenutno dostupnim informacijama te izvode statističko matematičke analize nad golemim
+                        količinama podataka da daju naizgled inteligentni output. Npr. IBM Deep Blue.
+                    </p>
+                </li>
+                <li>AI ograničene memorije (Limited Memory)
+                    <p>
+                        Upotrebljava podatke svojih prethodnih djelovanja zajedno s trenutnim podacima za donošenje odluka i generiranje outputa. Što se više trenira i što daje više odgovora, uz pravilno
+                        usmjeravanje od strane podatkovnih znanstvenika, daje bolje odgovore. To može i ne mora biti točno jer su odgovori pristrani kako je AI usmjeren od strane ljudske ruke te može doći do
+                        teških poremećaja. Primjer su Generativni AI alati kao ChatGPT, Bard, DeepSeek itd.
+                    </p>
+                </li>
+                <li>AI Teorije Uma
+                    <p>
+                        Pripada pod kategoriju generativnih AI-a ali posjeduje razumijevanje emocija drugih entiteta (ljudskih, životinja te drugih AI-a).
+                        Još nije realiziran u realnim uvjetima. 
+                    </p>
+                </li>
+                <li>Samosvjesni AI
+                    <p>
+                        Funkcionalna umjetna inteligencija koja spada pod klasu Super AI te je kao AI teorije uma striktno teoretska. Posjeduje vlastite
+                        emocije i razumije tuđe te ima iznimne kognitivne i intelektualne sposobnosti.
+                    </p>
+                </li>
+            </ol>
+            <img src="Slike/Azure_Cobalt_100.jpg" alt="" class="ai-img">
+        </div>
+        </div>
+        <div id="primjene">
+            <h2>Primjene</h2>
+            <ol>
+                <li>Računalni Vid
+                    <p>
+                        Primjena Uskog AI-a treniranog za raspoznavanje i analizu vizualnog svijeta.
+                    </p>
+                </li>
+                <li>Robotika
+                    <p>
+                        Primjena Uskog AI-a za obavljanje rutinskih repetitivnih zadaća koje uključuju rukovanje objektima, sastavljane te testiranje kvalitete. Medicinski asistenti za nadziranje vitalnih znakova te pomoć pri kirurškim zahvatima itd...
+                    </p>
+                </li>
+                <li>Ekspert Sustavi
+                    <p>
+                        Uski AI sustavi koji simuliraju ljudski proces donošenja odluka te rješavaju kompleksne probleme. Analiza ogromnih količina podataka kroz otkrivanje trendova i uzoraka za donošenje odluka. Primjer su poslovni analitičari te medicinska dijagnostika.
+                    </p>
+                </li>
+            </ol>
+        </div>
+        <img src="Slike/Asia_AI_DataCenter.jpg" alt="" class="ai-img">
+        <div>
+            <p>
+                Podaci preuzeti sa web stranica:
+            </p>
+            <a class="ref" href="https://www.ibm.com/think/topics/artificial-intelligence-types">www.ibm.com/think/topics/artificial-intelligence-types</a><br>
+            <a class="ref "href="https://builtin.com/artificial-intelligence/types-of-artificial-intelligence">www.builtin.com/artificial-intelligence/types-of-artificial-intelligence</a>
+
+        </div>
+    </main>
+    <footer>
+        <a href="#vrh">Povratak na Vrh</a>
+    </footer>
+</body>
+</html>
